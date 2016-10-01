@@ -1,0 +1,9 @@
+cups:
+  container_name: cups
+  build: .
+  ports:
+    - "6310:631"
+  environment:
+    - CUPS_USER_ADMIN=admin
+    - CUPS_USER_PASSWORD=admin
+  restart: always
